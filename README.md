@@ -47,6 +47,13 @@ This service monitors alerts from Level.io and triggers/resolves incidents in Pa
 
 - Will hold the alerts, and clear them when they has been resolved. 
 
+---
+
+## Trigger an alert
+
+- In policy the severity must be set to Emergency for the AppService to trigger the alert. 
+- The AppService will only trigger critical alerts, due to the way i use Pagerduty, only critical/emergency alerts are transfered. 
+
 ## Environment Variables
 
 Set these in **App Service → Configuration → Application settings**:
