@@ -59,3 +59,15 @@ PAGERDUTY_MULTI_KEYS={<optional_comma_separated_keys>}
 # Level.io
 LEVEL_API_KEY=<your_levelio_api_key>
 LEVEL_API_URL=<optional_custom_api_url>
+
+---
+
+## Application insights
+
+- Will only output to AppInsights if there is either error, or an alert. 
+
+---
+
+## Cosmos database
+
+- Will hold the alerts, and clear them when they has been resolved. 
