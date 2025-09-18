@@ -37,6 +37,16 @@ This service monitors alerts from Level.io and triggers/resolves incidents in Pa
 
 ---
 
+## Application insights
+
+- Will only output to AppInsights if there is either error, or an alert. 
+
+---
+
+## Cosmos database
+
+- Will hold the alerts, and clear them when they has been resolved. 
+
 ## Environment Variables
 
 Set these in **App Service → Configuration → Application settings**:
@@ -60,14 +70,3 @@ PAGERDUTY_MULTI_KEYS={<optional_comma_separated_keys>}
 LEVEL_API_KEY=<your_levelio_api_key>
 LEVEL_API_URL=<optional_custom_api_url>
 
----
-
-## Application insights
-
-- Will only output to AppInsights if there is either error, or an alert. 
-
----
-
-## Cosmos database
-
-- Will hold the alerts, and clear them when they has been resolved. 
